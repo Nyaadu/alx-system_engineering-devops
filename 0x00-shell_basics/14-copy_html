@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -v *html ./$(dirname "($(pwd))"
+find . -maxdepth 1 -name "*.html" -exec cp -u {} .. \
