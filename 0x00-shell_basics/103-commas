@@ -1,2 +1,2 @@
 #!/bin/bash
-awk '{if ($0 ~ /\.$/) printf "%s/,",$0 else if ($0 !~ /\.$/) printf "%s,",$0}' < <(ls -a)
+ls -a -p | paste -sd,
