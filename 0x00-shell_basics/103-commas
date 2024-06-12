@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1a -d --group-directories-first .[!.]* [[:digit:]]* [[:alpha:]]* | awk '{gsub(/([^\/]+)$/,"&/")}1' | paste -sd,
+ls -a | paste -sd,
