@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | awk '{gsub(/([^\/]+)$/,"&/")}1' | paste -sd,
+ls -a | awk '/\.$/{print $0 "/"}; !/\.$/' | paste -sd,
