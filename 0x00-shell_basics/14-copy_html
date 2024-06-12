@@ -1,2 +1,2 @@
 #!/bin/bash
-cp $(pwd)/*.html ./$(dirname "$(pwd)" 
+find . -name "*.html" -exec rsync -au {} ../ \
